@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function Projects({ theme }) {
+    const { t } = useTranslation();
     const [videoSrc, setVideoSrc] = useState(null);
 
     const openVideo = (src) => {
@@ -13,44 +15,41 @@ export function Projects({ theme }) {
 
     return (
         <section id="projects">
-            <p className="text_1_section">Navegue Pelos Meus</p>
-            <h1 className="title">Projetos</h1>
+            <p className="text_1_section">{t('projects.subtitle')}</p>
+            <h1 className="title">{t('projects.title')}</h1>
             <div className="container_experience_details">
                 <div className="container_about">
                     <div className="container_details container_color">
                         <div className="container_articles">
                             <i className='bx bx-calculator' id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">Calculadora</h2>
-                        <p className="project-description">Aplicação simples para realizar operações matemáticas básicas com design responsivo.</p>
-
+                        <h2 className="experience-subtitle project-title">{t('projects.calculadora_title')}</h2>
+                        <p className="project-description">{t('projects.calculadora_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onclick={() => window.location.href = 'https://github.com/mfeeee/mf_calculadora'}>Github</button>
-                            <button className="project-button button" onclick={() => window.location.href = 'https://mfeeee.github.io/mf_calculadora/'}>Live Demo</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/mf_calculadora'}>{t('projects.github')}</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://mfeeee.github.io/mf_calculadora/'}>{t('projects.livedemo')}</button>
                         </div>
                     </div>
-
                     <div className="container_details container_color">
                         <div className="container_articles">
                             <i className='bx bx-desktop' id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">Blog Django</h2>
-                        <p className="project-description">Blog desenvolvido com Python e Django, permitindo a criação, edição e visualização de postagens de maneira dinâmica.</p>
+                        <h2 className="experience-subtitle project-title">{t('projects.blog_title')}</h2>
+                        <p className="project-description">{t('projects.blog_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onclick={() => window.location.href = 'https://github.com/mfeeee/my_django_blog'}>Github</button>
-                            <button className="project-button button" onclick={() => window.location.href = 'https://mfeeee.pythonanywhere.com'}>Live Demo</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/my_django_blog'}>{t('projects.github')}</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://mfeeee.pythonanywhere.com'}>{t('projects.livedemo')}</button>
                         </div>
                     </div>
-
                     <div className="container_details container_color">
                         <div className="container_articles">
                             <i className='bx bx-food-menu' id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">Big Bite</h2>
-                        <p className="project-description">Site de venda de hambúrgueres online, oferecendo uma experiência de compra simples e rápida.</p>
+                        <h2 className="experience-subtitle project-title">{t('projects.bigbite_title')}</h2>
+                        <p className="project-description">{t('projects.bigbite_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onclick={() => window.location.href = 'https://github.com/mfeeee/big_bite'}>Github</button>
-                            <button className="project-button button" onclick={() => window.location.href = 'https://mfeeee.github.io/big_bite/'}>Live Demo</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/big_bite'}>{t('projects.github')}</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://mfeeee.github.io/big_bite/'}>{t('projects.livedemo')}</button>
                         </div>
                     </div>
                 </div>
@@ -59,27 +58,25 @@ export function Projects({ theme }) {
                         <div className="container_articles">
                             <i className='bx bxl-nodejs' id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">API Rest CRUD</h2>
-                        <p className="project-description">API simples para gerenciar produtos, construída com Node.js e Express.</p>
+                        <h2 className="experience-subtitle project-title">{t('projects.api_title')}</h2>
+                        <p className="project-description">{t('projects.api_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onclick={() => window.location.href = 'https://github.com/mfeeee/api-produtos'}>Github</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/api-produtos'}>{t('projects.github')}</button>
                         </div>
                     </div>
-
                     <div className="container_details container_color">
                         <div className="container_articles">
                             <i className="bx bx-mobile-alt" id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">PHP Quiz</h2>
-                        <p className="project-description">Aplicativo de quiz sobre PHP construído com Flutter e Dart</p>
+                        <h2 className="experience-subtitle project-title">{t('projects.phpquiz_title')}</h2>
+                        <p className="project-description">{t('projects.phpquiz_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onclick={() => window.location.href = 'https://github.com/mfeeee/projeto_perguntas'}>Github</button>
-                            <button className="project-button button" onClick={() => openVideo('assets/PHP_Quiz.mp4')}>Video Demo</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/projeto_perguntas'}>{t('projects.github')}</button>
+                            <button className="project-button button" onClick={() => openVideo('assets/PHP_Quiz.mp4')}>{t('projects.videodemo')}</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             {videoSrc && (
                 <div id="video-modal" style={{ display: 'flex' }} onClick={closeVideo}>
                     <div className="video-container" onClick={(e) => e.stopPropagation()}>
@@ -88,7 +85,6 @@ export function Projects({ theme }) {
                     </div>
                 </div>
             )}
-
             <div>
                 <img src={theme === 'dark' ? './assets/dark/arrow.png' : './assets/light/arrow.png'} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#contact'} />
             </div>
