@@ -1,5 +1,9 @@
+
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import arrowDark from '../assets/dark/arrow.png';
+import arrowLight from '../assets/light/arrow.png';
+import phpQuizVideo from '../assets/PHP_Quiz.mp4';
 
 export function Projects({ theme }) {
     const { t } = useTranslation();
@@ -72,7 +76,7 @@ export function Projects({ theme }) {
                         <p className="project-description">{t('projects.phpquiz_desc')}</p>
                         <div className="container_button">
                             <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/projeto_perguntas'}>{t('projects.github')}</button>
-                            <button className="project-button button" onClick={() => openVideo('assets/PHP_Quiz.mp4')}>{t('projects.videodemo')}</button>
+                            <button className="project-button button" onClick={() => openVideo(phpQuizVideo)}>{t('projects.videodemo')}</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +90,7 @@ export function Projects({ theme }) {
                 </div>
             )}
             <div>
-                <img src={theme === 'dark' ? './assets/dark/arrow.png' : './assets/light/arrow.png'} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#contact'} />
+                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#contact'} />
             </div>
         </section>
     );
