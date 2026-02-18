@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import React, { useEffect } from "react";
 import { Navbar } from "./components/Navbar";
+import { Profile } from './components/Profile';
 // import './styles.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 	return (
 		<div className="App">
 			<Navbar theme={theme} toggleTheme={toggleTheme} />
+			<Profile theme={theme} />
 		</div>
 	);
 }
