@@ -1,4 +1,11 @@
+
 import { useTranslation } from 'react-i18next';
+import maratonaImg from '../assets/maratona2025.png';
+import briefcaseBlue from '../assets/blue/briefcase.png';
+import educationBlue from '../assets/blue/education.png';
+import experienceBlue from '../assets/blue/experience.png';
+import arrowDark from '../assets/dark/arrow.png';
+import arrowLight from '../assets/light/arrow.png';
 
 export function About({ theme }) {
     const { t } = useTranslation();
@@ -8,26 +15,26 @@ export function About({ theme }) {
             <h1 className="title">{t('about.title')}</h1>
             <div className="section-container">
                 <div className="pic-container_section">
-                    <img src="./assets/maratona2025.png" alt="Foto de Desenvolvedora" className="about_pic" />
+                    <img src={maratonaImg} alt="Foto de Desenvolvedora" className="about_pic" />
                 </div>
                 <div className="container_about_details">
                     <div className="container_about">
                         <div className="container_details">
-                            <img src="assets/blue/briefcase.png" alt="Icone Qualificacao" className="icon" />
+                            <img src={briefcaseBlue} alt="Icone Qualificacao" className="icon" />
                             <h3>{t('about.experience_card')}</h3>
                             <p>{t('about.experience_1')}</p>
                             <br />
                             <p>{t('about.experience_2')}</p>
                         </div>
                         <div className="container_details">
-                            <img src="./assets/blue/education.png" alt="Icone Qualificacao" className="icon" />
+                            <img src={educationBlue} alt="Icone Qualificacao" className="icon" />
                             <h3>{t('about.studies_card')}</h3>
                             <p>{t('about.studies_1')}</p>
                             <br />
                             <p>{t('about.studies_2')}</p>
                         </div>
                         <div className="container_details">
-                            <img src="./assets/blue/experience.png" alt="Icone Conquista" className="icon" />
+                            <img src={experienceBlue} alt="Icone Conquista" className="icon" />
                             <h3>{t('about.achievements_card')}</h3>
                             <p>{t('about.achievement_1')}</p>
                         </div>
@@ -39,7 +46,7 @@ export function About({ theme }) {
             </div>
             <div>
                 <img 
-                    src={theme === 'dark' ? './assets/dark/arrow.png' : './assets/light/arrow.png'} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#experience'}
+                    src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#experience'}
                 />
             </div>
         </section>
