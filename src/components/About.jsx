@@ -24,14 +24,12 @@ export function About({ theme }) {
                             <h3>{t('about.experience_card')}</h3>
                             <p>{t('about.experience_1')}</p>
                             <br />
-                            <p>{t('about.experience_2')}</p>
                         </div>
                         <div className="container_details">
                             <img src={educationBlue} alt="Icone Qualificacao" className="icon" />
                             <h3>{t('about.studies_card')}</h3>
                             <p>{t('about.studies_1')}</p>
                             <br />
-                            <p>{t('about.studies_2')}</p>
                         </div>
                         <div className="container_details">
                             <img src={experienceBlue} alt="Icone Conquista" className="icon" />
@@ -40,7 +38,7 @@ export function About({ theme }) {
                         </div>
                     </div>
                     <div className="container_text">
-                        <p>{t('about.description')}</p>
+                        <p className='text-justified'>{t('about.description')}</p>
                     </div>
                 </div>
             </div>
