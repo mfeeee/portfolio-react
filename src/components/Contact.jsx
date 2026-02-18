@@ -1,14 +1,23 @@
-
-
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailBlue from '../assets/blue/email.png';
 import whatsappBlue from '../assets/blue/whatsapp.png';
 import linkedinBlue from '../assets/blue/linkedin.png';
-import arrowDark from '../assets/dark/arrow.png';
-import arrowLight from '../assets/light/arrow.png';
+import arrowDark from '../assets/dark/arrow-up.png';
+import arrowLight from '../assets/light/arrow-up.png';
+import arrowBLue from '../assets/blue/arrow-up.png';
 
 export function Contact({ theme }) {
     const { t } = useTranslation();
+    const [hoveredIcon, setHoveredIcon] = useState(null);
+    
+    const getArrowSrc = () => {
+        if (hoveredIcon === 'arrow') {
+            return arrowBLue;
+        }
+        return theme === 'dark' ? arrowDark : arrowLight;
+    };
+
     return (
     <section id="contact">
         <p className="text_1_section">{t('contact.subtitle')}</p>
@@ -31,7 +40,9 @@ export function Contact({ theme }) {
                 </div>
             </div>
             <div>
-                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#desktop-nav'} />
+                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}                    
+                    onClick={() => window.location.href = '#desktop-nav'} 
+                />            
             </div>
         </div>
     </section>            
