@@ -1,5 +1,4 @@
-
-
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import cIcon from '../assets/blue/c.png';
 import cppIcon from '../assets/blue/cpp.png';
@@ -28,9 +27,19 @@ import dockerIcon from '../assets/blue/docker.png';
 import kubernetesIcon from '../assets/blue/kubernetes.png';
 import arrowDark from '../assets/dark/arrow.png';
 import arrowLight from '../assets/light/arrow.png';
+import arrowBLue from '../assets/blue/arrow.png';
 
 export function Experience({ theme }) {
     const { t } = useTranslation();
+    const [hoveredIcon, setHoveredIcon] = useState(null);
+
+    const getArrowSrc = () => {
+        if (hoveredIcon === 'arrow') {
+            return arrowBLue;
+        }
+        return theme === 'dark' ? arrowDark : arrowLight;
+    };
+
     return (
         <section id="experience">
             <p className="text_1_section">{t('experience.subtitle')}</p>
@@ -241,7 +250,9 @@ export function Experience({ theme }) {
                 </div>
             </div>
             <div>
-                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#projects'} />
+                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}
+                    onClick={() => window.location.href = '#project'}
+                />
             </div>
         </section>
     );
