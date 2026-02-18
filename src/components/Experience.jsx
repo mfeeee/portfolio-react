@@ -1,5 +1,33 @@
 
+
 import { useTranslation } from 'react-i18next';
+import cIcon from '../assets/blue/c.png';
+import cppIcon from '../assets/blue/cpp.png';
+import phpIcon from '../assets/blue/php.png';
+import pythonIcon from '../assets/blue/python.png';
+import sqlIcon from '../assets/blue/sql.png';
+import typescriptIcon from '../assets/blue/typescript.png';
+import javascriptIcon from '../assets/blue/javascript.png';
+import dartIcon from '../assets/blue/dart.png';
+import javaIcon from '../assets/blue/java.png';
+import laravelIcon from '../assets/blue/laravel.png';
+import djangoIcon from '../assets/blue/django.png';
+import expressIcon from '../assets/blue/express.png';
+import nodejsIcon from '../assets/blue/nodejs.png';
+import denoIcon from '../assets/blue/deno.png';
+import flutterIcon from '../assets/blue/flutter.png';
+import htmlIcon from '../assets/blue/html.png';
+import cssIcon from '../assets/blue/css.png';
+import bootstrapIcon from '../assets/blue/bootstrap.png';
+import tailwindIcon from '../assets/blue/tailwind.png';
+import figmaIcon from '../assets/blue/figma.png';
+import postmanIcon from '../assets/blue/postman.png';
+import gitIcon from '../assets/blue/git.png';
+import mongodbIcon from '../assets/blue/mongodb.png';
+import dockerIcon from '../assets/blue/docker.png';
+import kubernetesIcon from '../assets/blue/kubernetes.png';
+import arrowDark from '../assets/dark/arrow.png';
+import arrowLight from '../assets/light/arrow.png';
 
 export function Experience({ theme }) {
     const { t } = useTranslation();
@@ -14,63 +42,63 @@ export function Experience({ theme }) {
                         <div className="container_articles">
                             {/* BACKEND */}
                             <article>
-                                <img src="./assets/blue/c.png" alt="Icone Experiencia" className="icon" />
+                                <img src={cIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.c')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/cpp.png" alt="Icone Experiencia" className="icon" />
+                                <img src={cppIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.cpp')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/php.png" alt="Icone Experiencia" className="icon" />
+                                <img src={phpIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.php')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/python.png" alt="Icone Experiencia" className="icon" />
+                                <img src={pythonIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.python')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/sql.png" alt="Icone Experiencia" className="icon" />
+                                <img src={sqlIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.sql')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/typescript.png" alt="Icone Experiencia" className="icon" />
+                                <img src={typescriptIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.typescript')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/javascript.png" alt="Icone Experiencia" className="icon" id="javascript" />
+                                <img src={javascriptIcon} alt="Icone Experiencia" className="icon" id="javascript" />
                                 <div>
                                     <h3>{t('experience.javascript')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/dart.png" alt="Icone Experiencia" className="icon" />
+                                <img src={dartIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.dart')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/java.png" alt="Icone Experiencia" className="icon" />
+                                <img src={javaIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.java')}</h3>
                                     <p>{t('experience.level_basic')}</p>
@@ -83,42 +111,42 @@ export function Experience({ theme }) {
                         <div className="container_articles">
                             {/* FRAMEWORKS */}
                             <article>
-                                <img src="./assets/blue/laravel.png" alt="Icone Experiencia" className="icon" />
+                                <img src={laravelIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.laravel')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/django.png" alt="Icone Experiencia" className="icon" />
+                                <img src={djangoIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.django')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/express.png" alt="Icone Experiencia" className="icon" />
+                                <img src={expressIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.express')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/nodejs.png" alt="Icone Experiencia" className="icon" />
+                                <img src={nodejsIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.nodejs')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/deno.png" alt="Icone Experiencia" className="icon" />
+                                <img src={denoIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.deno')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/flutter.png" alt="Icone Experiencia" className="icon" />
+                                <img src={flutterIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.flutter')}</h3>
                                     <p>{t('experience.level_inter')}</p>
@@ -131,35 +159,35 @@ export function Experience({ theme }) {
                         {/* FRONTEND */}
                         <div className="container_articles">
                             <article>
-                                <img src="./assets/blue/html.png" alt="Icone Experiencia" className="icon" />
+                                <img src={htmlIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.html')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/css.png" alt="Icone Experiencia" className="icon" />
+                                <img src={cssIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.css')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/bootstrap.png" alt="Icone Experiencia" className="icon" />
+                                <img src={bootstrapIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.bootstrap')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/tailwind.png" alt="Icone Experiencia" className="icon" />
+                                <img src={tailwindIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.tailwind')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/figma.png" alt="Icone Experiencia" className="icon" />
+                                <img src={figmaIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.figma')}</h3>
                                     <p>{t('experience.level_basic')}</p>
@@ -172,35 +200,35 @@ export function Experience({ theme }) {
                         <div className="container_articles">
                             {/* DEVOPS */}
                             <article>
-                                <img src="./assets/blue/postman.png" alt="Icone Experiencia" className="icon" />
+                                <img src={postmanIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.postman')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/git.png" alt="Icone Experiencia" className="icon" />
+                                <img src={gitIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.git')}</h3>
                                     <p>{t('experience.level_inter')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/mongodb.png" alt="Icone Experiencia" className="icon" />
+                                <img src={mongodbIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.mongodb')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/docker.png" alt="Icone Experiencia" className="icon" />
+                                <img src={dockerIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.docker')}</h3>
                                     <p>{t('experience.level_basic')}</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/blue/kubernetes.png" alt="Icone Experiencia" className="icon" />
+                                <img src={kubernetesIcon} alt="Icone Experiencia" className="icon" />
                                 <div>
                                     <h3>{t('experience.kubernetes')}</h3>
                                     <p>{t('experience.level_basic')}</p>
@@ -211,7 +239,7 @@ export function Experience({ theme }) {
                 </div>
             </div>
             <div>
-                <img src={theme === 'dark' ? './assets/dark/arrow.png' : './assets/light/arrow.png'} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#projects'}/>
+                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#projects'}/>
             </div>
         </section>
     );
