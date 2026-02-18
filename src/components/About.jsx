@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import maratonaImg from '../assets/maratona2025.png';
 import briefcaseBlue from '../assets/blue/briefcase.png';
@@ -6,9 +6,19 @@ import educationBlue from '../assets/blue/education.png';
 import experienceBlue from '../assets/blue/experience.png';
 import arrowDark from '../assets/dark/arrow.png';
 import arrowLight from '../assets/light/arrow.png';
+import arrowBLue from '../assets/blue/arrow.png';
 
 export function About({ theme }) {
     const { t } = useTranslation();
+    const [hoveredIcon, setHoveredIcon] = useState(null);
+
+    const getArrowSrc = () => {
+        if (hoveredIcon === 'arrow') {
+            return arrowBLue;
+        }
+        return theme === 'dark' ? arrowDark : arrowLight;
+    };
+
     return (
         <section id="about">
             <p className="text_1_section">{t('about.subtitle')}</p>
@@ -43,8 +53,8 @@ export function About({ theme }) {
                 </div>
             </div>
             <div>
-                <img 
-                    src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#experience'}
+                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}
+                    onClick={() => window.location.href = '#experience'}
                 />
             </div>
         </section>
