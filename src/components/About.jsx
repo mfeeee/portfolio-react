@@ -1,10 +1,11 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function About({ theme }) {
+    const { t } = useTranslation();
     return (
         <section id="about">
-            <p className="text_1_section">Conheça Mais</p>
-            <h1 className="title">Sobre Mim</h1>
+            <p className="text_1_section">{t('about.subtitle')}</p>
+            <h1 className="title">{t('about.title')}</h1>
             <div className="section-container">
                 <div className="pic-container_section">
                     <img src="./assets/maratona2025.png" alt="Foto de Desenvolvedora" className="about_pic" />
@@ -13,32 +14,26 @@ export function About({ theme }) {
                     <div className="container_about">
                         <div className="container_details">
                             <img src="assets/blue/briefcase.png" alt="Icone Qualificacao" className="icon" />
-                            <h3>Experiência Profissional</h3>
-                            <p>AldeiaWeb - Estagiária FullStack (08/2025 - Atual)</p>
+                            <h3>{t('about.experience_card')}</h3>
+                            <p>{t('about.experience_1')}</p>
                             <br />
-                            <p>RGM Tecnologias - Estagiária de desenvolvimento (01/2025 - 08/2025)</p>
+                            <p>{t('about.experience_2')}</p>
                         </div>
                         <div className="container_details">
                             <img src="./assets/blue/education.png" alt="Icone Qualificacao" className="icon" />
-                            <h3>Estudos</h3>
-                            <p>Análise e Desenvolvimento de Sistemas - Instituto Federal do Piauí (IFPI)</p>
+                            <h3>{t('about.studies_card')}</h3>
+                            <p>{t('about.studies_1')}</p>
                             <br />
-                            <p>Desenvolvedor Fullstack - Programe.IO</p>
+                            <p>{t('about.studies_2')}</p>
                         </div>
                         <div className="container_details">
                             <img src="./assets/blue/experience.png" alt="Icone Conquista" className="icon" />
-                            <h3>Conquistas</h3>
-                            <p>Menção Honrosa na Final Brasileira da Maratona SBC de Programação (2025)</p>
+                            <h3>{t('about.achievements_card')}</h3>
+                            <p>{t('about.achievement_1')}</p>
                         </div>
                     </div>
                     <div className="container_text">
-                        <p>
-                            Sou Maria Fernanda, estudante de Análise e Desenvolvimento de Sistemas no IFPI e apaixonada por tecnologia e arte. Tenho experiência em algoritmos, estruturas de dados 
-                            e raciocínio lógico, comprovada pela classificação para a Final Nacional da Maratona SBC de Programação (2025) e atuação como bolsista de pesquisa científica (PIBIC/CNPq) 
-                            em sistemas de coleta de dados arqueológicos. Atualmente, sou estagiária fullstack trabalhando com o framework Laravel na AldeiaWeb, onde aplico meus conhecimentos em projetos 
-                            reais. Também expando minhas habilidades em Tailwind, Java e soft skills pelo Programe.IO. Minha paixão por música clássica e piano inspira disciplina, atenção aos detalhes e 
-                            criatividade, qualidades que levo para o desenvolvimento de soluções inovadoras e eficientes.
-                        </p>
+                        <p>{t('about.description')}</p>
                     </div>
                 </div>
             </div>
