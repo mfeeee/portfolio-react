@@ -465,6 +465,10 @@ article .icon {
     padding: 0;
 }
 
+.text-justified {
+    text-align: justify;
+}
+
 /* seção contato */
 
 #contact {
