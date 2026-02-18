@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "Sobre Mim",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "profile": {
+    "hello": "Olá, eu sou",
+    "name": "Maria Fernanda",
+    "role": "Engenheira de Software",
+    "cv_button": "Download CV",
+    "contact_button": "Contato",
+    "github": "Meu Perfil github",
+    "linkedin": "Meu Perfil linkedin",
+    "instagram": "Meu Perfil instagram"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "subtitle": "Conheça Mais",
+    "experience_card": "Experiência Profissional",
+    "studies_card": "Estudos",
+    "achievements_card": "Conquistas",
+    "experience_1": "AldeiaWeb - Estagiária FullStack (08/2025 - Atual)",
+    "experience_2": "RGM Tecnologias - Estagiária de desenvolvimento (01/2025 - 08/2025)",
+    "studies_1": "Análise e Desenvolvimento de Sistemas - Instituto Federal do Piauí (IFPI)",
+    "studies_2": "Desenvolvedor Fullstack - Programe.IO",
+    "achievement_1": "Menção Honrosa na Final Brasileira da Maratona SBC de Programação (2025)",
+    "description": "Sou Maria Fernanda, estudante de Análise e Desenvolvimento de Sistemas no IFPI e apaixonada por tecnologia e arte. Tenho experiência em algoritmos, estruturas de dados e raciocínio lógico, comprovada pela classificação para a Final Nacional da Maratona SBC de Programação (2025) e atuação como bolsista de pesquisa científica (PIBIC/CNPq) em sistemas de coleta de dados arqueológicos. Atualmente, sou estagiária fullstack trabalhando com o framework Laravel na AldeiaWeb, onde aplico meus conhecimentos em projetos reais. Também expando minhas habilidades em Tailwind, Java e soft skills pelo Programe.IO. Minha paixão por música clássica e piano inspira disciplina, atenção aos detalhes e criatividade, qualidades que levo para o desenvolvimento de soluções inovadoras e eficientes."
+  },
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "Explore Minha",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "frameworks": "Frameworks",
+    "devops": "DevOps",
+    "level_inter": "Intermediário",
+    "level_basic": "Básico",
+    "c": "C",
+    "cpp": "C++",
+    "php": "PHP",
+    "python": "Python",
+    "sql": "SQL",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "dart": "Dart",
+    "java": "Java",
+    "laravel": "Laravel",
+    "django": "Django",
+    "express": "Express.js",
+    "nodejs": "Node.js",
+    "deno": "Deno",
+    "flutter": "Flutter",
+    "html": "HTML",
+    "css": "CSS",
+    "bootstrap": "Bootstrap",
+    "tailwind": "Tailwind",
+    "figma": "Figma",
+    "postman": "Postman",
+    "git": "Git",
+    "mongodb": "Mongo.db",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Navegue Pelos Meus",
+    "calculadora_title": "Calculadora",
+    "calculadora_desc": "Aplicação simples para realizar operações matemáticas básicas com design responsivo.",
+    "blog_title": "Blog Django",
+    "blog_desc": "Blog desenvolvido com Python e Django, permitindo a criação, edição e visualização de postagens de maneira dinâmica.",
+    "bigbite_title": "Big Bite",
+    "bigbite_desc": "Site de venda de hambúrgueres online, oferecendo uma experiência de compra simples e rápida.",
+    "api_title": "API Rest CRUD",
+    "api_desc": "API simples para gerenciar produtos, construída com Node.js e Express.",
+    "phpquiz_title": "PHP Quiz",
+    "phpquiz_desc": "Aplicativo de quiz sobre PHP construído com Flutter e Dart",
+    "github": "Github",
+    "livedemo": "Live Demo",
+    "videodemo": "Video Demo"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Fale Comigo",
+    "email": "mfernandarocosta@gmail.com",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "copyright": "Copyright \u00A9 2026 Maria Fernanda. Todos os Direitos Reservados."
+  }
+}
