@@ -14,16 +14,16 @@ export function Profile({ theme }) {
 
     return (
         <section id="profile">
-            <div class="pic-container_section">
+            <div className="pic-container_section">
                 <img src={profileImg} alt="Foto de Perfil Maria Fernanda" />
             </div>
-            <div class="text_section">
-                <p class="text_1_section">Olá, eu sou</p>
-                <h1 class="title">Maria Fernanda</h1>
-                <p class="text_2_section">Engenheira de Software</p>
-                <div class="container_button">
-                    <button class="button button-color1" onclick={() => window.open('https://mfeeee.github.io/resume/resume.pdf', '_blank')}>Download CV</button>
-                    <button class="button button-color2" onclick={() => window.location.href = '#contact'}>Contato</button>
+            <div className="text_section">
+                <p className="text_1_section">Olá, eu sou</p>
+                <h1 className="title">Maria Fernanda</h1>
+                <p className="text_2_section">Engenheira de Software</p>
+                <div className="container_button">
+                    <button className="button button-color1" onclick={() => window.open('https://mfeeee.github.io/resume/resume.pdf', '_blank')}>Download CV</button>
+                    <button className="button button-color2" onclick={() => window.location.href = '#contact'}>Contato</button>
                 </div>
                 <div id="container_socials">
                     {['github', 'linkedin', 'instagram'].map((social) => (
