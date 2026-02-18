@@ -2,11 +2,11 @@
 import { useTranslation } from 'react-i18next';
 
 export function Navbar({ theme, toggleTheme }) {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-        localStorage.setItem('language', lng);
+    const toggleLanguage = () => {
+        const newLanguage = i18n.language === 'pt' ? 'en' : 'pt';
+        i18n.changeLanguage(newLanguage);
     };
 
     return (
@@ -19,8 +19,15 @@ export function Navbar({ theme, toggleTheme }) {
                     <li><a href="#projects">{t('nav.projects')}</a></li>
                     <li><a href="#contact">{t('nav.contact')}</a></li>
                     <li>
-                        <button onClick={() => changeLanguage('en')}>EN</button>
-                        <button onClick={() => changeLanguage('pt')}>PT</button>
+                        <i
+                            className='bx bx-world'
+                            id="language-toggle-icon"
+                            onClick={toggleLanguage}
+                            style={{ cursor: 'pointer', fontSize: '1.5rem' }}
+                        ></i>
+                        <span style={{ marginLeft: '5px', fontWeight: '600', cursor: 'pointer' }} onClick={toggleLanguage}>
+                            {i18n.language.toUpperCase()}
+                        </span>
                     </li>
                     <li>
                         <i
