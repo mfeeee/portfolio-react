@@ -1,3 +1,22 @@
+.nav-icon-hover {
+    color: #4170a9 !important;
+}
+/* navbar custom icons/lang */
+.nav-lang, .nav-icon {
+    transition: color 0.3s;
+}
+
+.nav-lang.nav-icon-light, .nav-icon.nav-icon-light {
+    color: #0f172a;
+}
+.nav-lang.nav-icon-dark, .nav-icon.nav-icon-dark {
+    color: #e3f2fd;
+}
+
+.nav-lang:hover, .nav-icon:hover {
+    color: #4170a9 !important;
+    cursor: pointer;
+}
 /* modo escuro */
 :root {
     --body_bg: #E3F2FD;
@@ -422,6 +441,19 @@ article .icon {
     color: var(--black);
     font-size: 32px;
     padding: 0;
+}
+
+#language-toggle-icon {
+    color: var(--black);
+    font-size: 32px;
+    padding: 0;
+}
+
+#language-toggle-text {
+    color: var(--black);
+    font-size: 24px;
+    padding: 0;
+
 }
 
 #dark-mode-icon:hover {
