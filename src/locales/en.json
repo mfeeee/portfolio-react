@@ -1,0 +1,93 @@
+{
+	"nav": {
+		"about": "About Me",
+		"experience": "Experience",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"profile": {
+		"hello": "Hello, I am",
+		"name": "Maria Fernanda",
+		"role": "Software Engineer",
+		"cv_button": "Download CV",
+		"contact_button": "Contact",
+		"github": "My github Profile",
+		"linkedin": "My linkedin Profile",
+		"instagram": "My instagram Profile"
+	},
+	"about": {
+		"title": "About Me",
+		"subtitle": "Get to Know Me",
+		"experience_card": "Professional Experience",
+		"studies_card": "Education",
+		"achievements_card": "Achievements",
+		"experience_1": "AldeiaWeb - FullStack Intern (08/2025 - Present)",
+		"experience_2": "RGM Tecnologias - Development Intern (01/2025 - 08/2025)",
+		"studies_1": "Systems Analysis and Development - Federal Institute of Piauí (IFPI)",
+		"studies_2": "Fullstack Developer - Programe.IO",
+		"achievement_1": "Honorable Mention at the Brazilian Final of the SBC Programming Marathon (2025)",
+		"description": "I'm Maria Fernanda, a Systems Analysis and Development student at IFPI, passionate about technology and art. I have experience in algorithms, data structures, and logical reasoning, proven by qualifying for the National Final of the SBC Programming Marathon (2025) and working as a scientific research fellow (PIBIC/CNPq) in archaeological data collection systems. Currently, I am a fullstack intern working with the Laravel framework at AldeiaWeb, where I apply my knowledge to real projects. I am also expanding my skills in Tailwind, Java, and soft skills through Programe.IO. My passion for classical music and piano inspires discipline, attention to detail, and creativity—qualities I bring to developing innovative and efficient solutions."
+	},
+	"experience": {
+		"title": "Experience",
+		"subtitle": "Explore My",
+		"frontend": "Frontend",
+		"backend": "Backend",
+		"frameworks": "Frameworks",
+		"devops": "DevOps",
+		"level_inter": "Intermediate",
+		"level_basic": "Basic",
+		"c": "C",
+		"cpp": "C++",
+		"php": "PHP",
+		"python": "Python",
+		"sql": "SQL",
+		"typescript": "TypeScript",
+		"javascript": "JavaScript",
+		"dart": "Dart",
+		"java": "Java",
+		"laravel": "Laravel",
+		"django": "Django",
+		"express": "Express.js",
+		"nodejs": "Node.js",
+		"deno": "Deno",
+		"flutter": "Flutter",
+		"html": "HTML",
+		"css": "CSS",
+		"bootstrap": "Bootstrap",
+		"tailwind": "Tailwind",
+		"figma": "Figma",
+		"postman": "Postman",
+		"git": "Git",
+		"mongodb": "Mongo.db",
+		"docker": "Docker",
+		"kubernetes": "Kubernetes"
+	},
+	"projects": {
+		"title": "Projects",
+		"subtitle": "Browse My",
+		"calculadora_title": "Calculator",
+		"calculadora_desc": "Simple application to perform basic math operations with responsive design.",
+		"blog_title": "Django Blog",
+		"blog_desc": "Blog developed with Python and Django, allowing dynamic creation, editing, and viewing of posts.",
+		"bigbite_title": "Big Bite",
+		"bigbite_desc": "Online hamburger sales site, offering a simple and fast shopping experience.",
+		"api_title": "REST CRUD API",
+		"api_desc": "Simple API to manage products, built with Node.js and Express.",
+		"phpquiz_title": "PHP Quiz",
+		"phpquiz_desc": "Quiz app about PHP built with Flutter and Dart",
+		"github": "Github",
+		"livedemo": "Live Demo",
+		"videodemo": "Video Demo"
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "Contact Me",
+		"email": "mfernandarocosta@gmail.com",
+		"whatsapp": "WhatsApp",
+		"linkedin": "LinkedIn"
+	},
+	"footer": {
+		"copyright": "Copyright \u00A9 2026 Maria Fernanda. All Rights Reserved."
+	}
+}
