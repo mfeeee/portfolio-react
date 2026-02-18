@@ -3,9 +3,9 @@ import React from "react";
 export function Navbar({ theme, toggleTheme }) {
     return (
         <nav id="desktop-nav">
-        <div class="logo">Maria Fernanda</div>
+        <div className="logo">Maria Fernanda</div>
         <div>
-            <ul class="links_nav">
+            <ul className="links_nav">
                 <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#experience">Experiência</a></li>
                 <li><a href="#projects">Projetos</a></li>
