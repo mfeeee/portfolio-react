@@ -2,7 +2,7 @@
 import { useTranslation } from 'react-i18next';
 
 export function Navbar({ theme, toggleTheme }) {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const toggleLanguage = () => {
         const newLanguage = i18n.language === 'pt' ? 'en' : 'pt';
