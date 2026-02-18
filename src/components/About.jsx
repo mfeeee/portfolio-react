@@ -3,35 +3,35 @@ import React from 'react';
 export function About({ theme }) {
     return (
         <section id="about">
-            <p class="text_1_section">Conheça Mais</p>
-            <h1 class="title">Sobre Mim</h1>
-            <div class="section-container">
-                <div class="pic-container_section">
-                    <img src="./assets/maratona2025.png" alt="Foto de Desenvolvedora" class="about_pic" />
+            <p className="text_1_section">Conheça Mais</p>
+            <h1 className="title">Sobre Mim</h1>
+            <div className="section-container">
+                <div className="pic-container_section">
+                    <img src="./assets/maratona2025.png" alt="Foto de Desenvolvedora" className="about_pic" />
                 </div>
-                <div class="container_about_details">
-                    <div class="container_about">
-                        <div class="container_details">
-                            <img src="assets/blue/briefcase.png" alt="Icone Qualificacao" class="icon" />
+                <div className="container_about_details">
+                    <div className="container_about">
+                        <div className="container_details">
+                            <img src="assets/blue/briefcase.png" alt="Icone Qualificacao" className="icon" />
                             <h3>Experiência Profissional</h3>
                             <p>AldeiaWeb - Estagiária FullStack (08/2025 - Atual)</p>
                             <br />
                             <p>RGM Tecnologias - Estagiária de desenvolvimento (01/2025 - 08/2025)</p>
                         </div>
-                        <div class="container_details">
-                            <img src="./assets/blue/education.png" alt="Icone Qualificacao" class="icon" />
+                        <div className="container_details">
+                            <img src="./assets/blue/education.png" alt="Icone Qualificacao" className="icon" />
                             <h3>Estudos</h3>
                             <p>Análise e Desenvolvimento de Sistemas - Instituto Federal do Piauí (IFPI)</p>
                             <br />
                             <p>Desenvolvedor Fullstack - Programe.IO</p>
                         </div>
-                        <div class="container_details">
-                            <img src="./assets/blue/experience.png" alt="Icone Conquista" class="icon" />
+                        <div className="container_details">
+                            <img src="./assets/blue/experience.png" alt="Icone Conquista" className="icon" />
                             <h3>Conquistas</h3>
                             <p>Menção Honrosa na Final Brasileira da Maratona SBC de Programação (2025)</p>
                         </div>
                     </div>
-                    <div class="container_text">
+                    <div className="container_text">
                         <p>
                             Sou Maria Fernanda, estudante de Análise e Desenvolvimento de Sistemas no IFPI e apaixonada por tecnologia e arte. Tenho experiência em algoritmos, estruturas de dados 
                             e raciocínio lógico, comprovada pela classificação para a Final Nacional da Maratona SBC de Programação (2025) e atuação como bolsista de pesquisa científica (PIBIC/CNPq) 
