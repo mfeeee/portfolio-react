@@ -1,6 +1,3 @@
-/* geral */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 /* modo escuro */
 :root {
     --body_bg: #E3F2FD;
@@ -145,11 +142,19 @@ a:hover {
 /* seções */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 160px;
-    min-height: fit-content;
+        padding-top: 4vh;
+        margin: 0 auto;
+        max-width: 1200px;
+        min-height: fit-content;
 }
+
+@media (max-width: 900px) {
+    section {
+        margin: 0 16px;
+        max-width: 100%;
+    }
+}
+
 
 .section-container {
     display: flex;
@@ -316,6 +321,10 @@ section {
 
 .container_about .icon {
     cursor: default;
+}
+
+.text-justifed {
+    text-align: justify;
 }
 
 /* seção experiencia */
