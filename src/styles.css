@@ -1,3 +1,6 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 /* modo escuro */
 :root {
     --body_bg: #E3F2FD;
@@ -29,9 +32,6 @@
     --white: #0F172A;
     --profile_pic: "./assets/dark-profile-pic.png";
 }
-
-/* geral */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
