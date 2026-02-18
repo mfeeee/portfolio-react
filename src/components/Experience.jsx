@@ -154,6 +154,8 @@ export function Experience({ theme }) {
                             </article>
                         </div>
                     </div>
+                </div>
+                <div className='container_about'>
                     <div className="container_details">
                         <h2 className="experience-subtitle">Frontend</h2>
                         {/* FRONTEND */}
@@ -239,7 +241,7 @@ export function Experience({ theme }) {
                 </div>
             </div>
             <div>
-                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href='#projects'}/>
+                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#projects'} />
             </div>
         </section>
     );
