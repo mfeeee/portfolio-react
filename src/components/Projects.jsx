@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import arrowDark from '../assets/dark/arrow.png';
@@ -18,14 +17,14 @@ export function Projects({ theme }) {
         setVideoSrc(null);
     };
 
-        const [hoveredIcon, setHoveredIcon] = useState(null);
-        
-        const getArrowSrc = () => {
-            if (hoveredIcon === 'arrow') {
-                return arrowBLue;
-            }
-            return theme === 'dark' ? arrowDark : arrowLight;
-        };
+    const [hoveredIcon, setHoveredIcon] = useState(null);
+
+    const getArrowSrc = () => {
+        if (hoveredIcon === 'arrow') {
+            return arrowBLue;
+        }
+        return theme === 'dark' ? arrowDark : arrowLight;
+    };
 
     return (
         <section id="projects">
@@ -100,8 +99,8 @@ export function Projects({ theme }) {
                 </div>
             )}
             <div>
-                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}                    
-                    onClick={() => window.location.href = '#contact'} 
+                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}
+                    onClick={() => window.location.href = '#contact'}
                 />
             </div>
         </section>
