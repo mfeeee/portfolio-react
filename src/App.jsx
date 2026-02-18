@@ -8,6 +8,8 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import './styles.css';
+import './mediaqueries.css';
+
 
 function App() {
 	const [count, setCount] = useState(0);
