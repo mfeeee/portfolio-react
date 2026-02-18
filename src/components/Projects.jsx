@@ -37,7 +37,7 @@ export function Projects({ theme }) {
                             <i className='bx bx-calculator' id="dark-mode-icon-no-hover"></i>
                         </div>
                         <h2 className="experience-subtitle project-title">{t('projects.calculadora_title')}</h2>
-                        <p className="project-description">{t('projects.calculadora_desc')}</p>
+                        <p className="project-description ">{t('projects.calculadora_desc')}</p>
                         <div className="container_button">
                             <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/mf_calculadora'}>{t('projects.github')}</button>
                             <button className="project-button button" onClick={() => window.location.href = 'https://mfeeee.github.io/mf_calculadora/'}>{t('projects.livedemo')}</button>
