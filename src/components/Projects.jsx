@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import arrowDark from '../assets/dark/arrow.png';
 import arrowLight from '../assets/light/arrow.png';
+import arrowBLue from '../assets/blue/arrow.png';
 import phpQuizVideo from '../assets/PHP_Quiz.mp4';
 
 export function Projects({ theme }) {
@@ -16,6 +17,15 @@ export function Projects({ theme }) {
     const closeVideo = () => {
         setVideoSrc(null);
     };
+
+        const [hoveredIcon, setHoveredIcon] = useState(null);
+        
+        const getArrowSrc = () => {
+            if (hoveredIcon === 'arrow') {
+                return arrowBLue;
+            }
+            return theme === 'dark' ? arrowDark : arrowLight;
+        };
 
     return (
         <section id="projects">
@@ -90,7 +100,9 @@ export function Projects({ theme }) {
                 </div>
             )}
             <div>
-                <img src={theme === 'dark' ? arrowDark : arrowLight} alt="Icone de Flecha" className="icon arrow" onClick={() => window.location.href = '#contact'} />
+                <img src={getArrowSrc()} alt="Icone de Flecha" className="icon arrow" onMouseOver={() => setHoveredIcon('arrow')} onMouseOut={() => setHoveredIcon(null)}                    
+                    onClick={() => window.location.href = '#contact'} 
+                />
             </div>
         </section>
     );
