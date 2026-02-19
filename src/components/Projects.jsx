@@ -47,11 +47,10 @@ export function Projects({ theme }) {
                         <div className="container_articles">
                             <i className='bx bx-desktop' id="dark-mode-icon-no-hover"></i>
                         </div>
-                        <h2 className="experience-subtitle project-title">{t('projects.blog_title')}</h2>
-                        <p className="project-description">{t('projects.blog_desc')}</p>
+                        <h2 className="experience-subtitle project-title">{t('projects.tasktracker_title')}</h2>
+                        <p className="project-description">{t('projects.tasktracker_desc')}</p>
                         <div className="container_button">
-                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/my_django_blog'}>{t('projects.github')}</button>
-                            <button className="project-button button" onClick={() => window.location.href = 'https://mfeeee.pythonanywhere.com'}>{t('projects.livedemo')}</button>
+                            <button className="project-button button" onClick={() => window.location.href = 'https://github.com/mfeeee/task-tracker-cli/'}>{t('projects.github')}</button>
                         </div>
                     </div>
                     <div className="container_details container_color">
