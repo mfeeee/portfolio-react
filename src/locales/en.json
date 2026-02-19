@@ -70,6 +70,8 @@
 		"calculadora_desc": "Simple application to perform basic math operations with responsive design.",
 		"blog_title": "Django Blog",
 		"blog_desc": "Blog developed with Python and Django, allowing dynamic creation, editing, and viewing of posts.",
+		"tasktracker_title": "Task Tracker CLI",
+		"tasktracker_desc": "a CLI app built with Python to track your tasks and manage your to-do list.",
 		"bigbite_title": "Big Bite",
 		"bigbite_desc": "Online hamburger sales site, offering a simple and fast shopping experience.",
 		"api_title": "REST CRUD API",
