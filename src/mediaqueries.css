@@ -1,3 +1,59 @@
+@media screen and (max-width: 400px) {
+        body, #root, main, section, .container_about, .container_button, .container_details_info {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .container_contact, .contact_info, footer {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .email, .footer-email, .container_contact a[href^="mailto"] {
+            display: inline-block;
+            max-width: 95vw;
+            overflow-wrap: break-word;
+            word-break: break-all;
+            white-space: normal;
+            text-align: center;
+        }
+    html, body {
+        font-size: 14px;
+    }
+    .pic-container_section {
+        width: 90vw;
+        height: 40vw;
+        min-width: 120px;
+        min-height: 120px;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .text_section, .experience-subtitle {
+        font-size: 1rem;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    .links_nav {
+        margin: 1rem;
+        gap: 0.25rem;
+    }
+    .container_button, .container_about, .container_details_info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    button, .container_button button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    section {
+        margin: 0 2vw;
+    }
+}
 @media screen and (max-width: 1400px){
     #profile {
         height: 83vh;
