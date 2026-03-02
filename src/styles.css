@@ -50,6 +50,16 @@
 }
 
 * {
+    html, body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden !important;
+    }
+    body, #root, main, section, .container_about, .container_button, .container_details_info {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
     margin: 0;
     padding: 0;
     box-sizing: border-box;
